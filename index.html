@@ -1,279 +1,34 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaizen Bureau</title>
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="lg.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
-  <body>
-    <!-- Header Section -->
-    <header>
-      <img src="logo.png" alt="Kaizen Bureau Logo" />
-      <nav>
-        <ul>
-          <li><a href="#kaizen">Кайдзен</a></li>
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#interaction">Взаимодействие</a></li>
-          <li><a href="#consultation">Консультация</a></li>
-          <li><a href="#cases">Кейсы</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section
-      id="hero"
-      style="
-        background-color: #0c2340;
-        color: white;
-        text-align: center;
-        padding: 40px;
-      "
-    >
-      <h2>Как навести порядок в бизнесе и выйти на новый уровень?</h2>
-      <p>
-        <em
-          >Компании, использующие Кайдзен, растут быстрее конкурентов. Их
-          команды работают слаженно, а руководители получают больше свободного
-          времени.</em
-        >
-      </p>
-    </section>
-
-    <!-- Problems Section -->
-    <section id="problems">
-      <h2>Если процессы в компании не отлажены...</h2>
-      <p>
-        <strong>Кайдзен</strong> – это система маленьких шагов, которая приводит
-        к большим результатам.
-      </p>
-      <ul>
-        <li><strong>Хаос в управлении</strong> – нет чётких процессов.</li>
-        <li>
-          <strong>Низкая продуктивность</strong> – медленная скорость выполнения
-          задач.
-        </li>
-        <li>
-          <strong>Потери прибыли</strong> – компания не использует ресурсы
-          эффективно.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Why Kaizen Section -->
-    <section id="why-kaizen">
-      <h2>Почему крупнейшие компании мира внедряют Кайдзен?</h2>
-      <ul>
-        <li><strong>Постоянные улучшения</strong> – Оптимизация процессов.</li>
-        <li>
-          <strong>Гибкость</strong> – Методика адаптируется под любой бизнес.
-        </li>
-        <li>
-          <strong>Вовлечение сотрудников</strong> – Сотрудники становятся частью
-          изменений.
-        </li>
-      </ul>
-    </section>
-
-    <!-- About Trainer Section -->
-    <section id="trainer" style="background-color: #d3d3d3; padding: 40px">
-      <h2>Сымбат Кадыр – ваш Кайдзен-тренер</h2>
-      <p><strong>Квалификация:</strong></p>
-      <ul>
-        <li>Сертифицированный Executive MBA.</li>
-        <li>Специалист Total Toyota Production System.</li>
-        <li>Эксперт по бережливому производству.</li>
-        <li>Тренер по нейроинтеграции.</li>
-        <li>Консультант по изменениям.</li>
-      </ul>
-      <p><strong>Опыт:</strong></p>
-      <ul>
-        <li>15 лет в корпоративном бизнесе.</li>
-        <li>20 лет в управлении предприятием.</li>
-        <li>7 лет в консалтинге.</li>
-      </ul>
-      <p>
-        <em
-          >"Я обучаю компании, как навести порядок в процессах, снизить потери и
-          создать сильные команды."</em
-        >
-      </p>
-      <button>Записаться на консультацию</button>
-    </section>
-
-     <!-- Section: Diagnostic Consultation -->
-    <section>
-      <h2>
-        Важно правильно оценить ресурсы и понять, с чего необходимо начинать
-        наводить порядок. Поэтому я приглашаю вас на консультацию.
-      </h2>
-      <p>Как проходит диагностическая консультация?</p>
-
-      <div>
-        <h3>Сначала проведём краткий аудит:</h3>
-        <p>
-          Пройдемся по ключевым процессам, посмотрим, где теряются ресурсы и что
-          мешает бизнесу работать эффективнее.
-        </p>
-      </div>
-
-      <div>
-        <h3>Затем определим узкие места и точки роста:</h3>
-        <p>
-          Разберем, какие инструменты Кайдзен могут помочь в вашей ситуации.
-        </p>
-      </div>
-
-      <div>
-        <h3>После этого я отвечу на важные вопросы:</h3>
-        <p>
-          Обсудим, какое обучение будет актуально для бизнеса, какие ресурсы
-          понадобятся и какие результаты можно ожидать.
-        </p>
-      </div>
-
-      <h3>Формат консультации</h3>
-      <ul>
-        <li><strong>Длительность:</strong> 60 минут.</li>
-        <li>
-          <strong>Формат:</strong> Онлайн (Zoom, Microsoft Teams) или офлайн (по
-          договоренности).
-        </li>
-        <li>
-          <strong>Состав участников:</strong> Вы и ключевые сотрудники (если
-          требуется).
-        </li>
-        <li>
-          <strong>Результат:</strong> Краткий отчет с выявленными проблемами и
-          рекомендациями.
-        </li>
-      </ul>
-
-      <button>Записаться на консультацию</button>
-
-      <p>
-        Запишитесь на консультацию и получите четкий вектор изменений для вашего
-        бизнеса!
-      </p>
-    </section>
+    <!-- Example Code -->
 
 
-    <!-- Section: Kaizen Training Program -->
-    <section>
-      <blockquote>
-        <p>Любые изменения в бизнесе начинаются с обучения...</p>
-      </blockquote>
-
-      <h2>
-        Какие тренинги входят в программу Кайдзен и что они дают собственнику
-        бизнеса?
-      </h2>
-
-      <div>
-        <h3>Тренинг "Основы Кайдзен"</h3>
-        <p>
-          <strong>Что дает?</strong> Помогает сотрудникам понять, как
-          выстраивать свою работу по четким стандартам...
-        </p>
-        <p>
-          <strong>Почему важно?</strong> Без понимания инструментов
-          эффективность будет краткосрочной.
-        </p>
-      </div>
-
-      <div>
-        <h3>Тренинг "Методы решения проблем"</h3>
-        <p>
-          <strong>Что дает?</strong> Обучает сотрудников не просто устранять
-          последствия проблем, а находить их коренные причины.
-        </p>
-        <p>
-          <strong>Почему важно?</strong> Позволяет снизить количество
-          повторяющихся ошибок.
-        </p>
-      </div>
-
-      <div>
-        <h3>Тренинг "Улучшение процессов"</h3>
-        <p>
-          <strong>Что дает?</strong> Работа с процессами, устранение потерь и
-          увеличение производительности.
-        </p>
-        <p>
-          <strong>Почему важно?</strong> Позволяет избежать дополнительных
-          затрат.
-        </p>
-      </div>
-
-      <div>
-        <h3>Тренинг "Руководство и контроль"</h3>
-        <p>
-          <strong>Что дает?</strong> Руководители учатся управлять командой
-          через систему ответственности.
-        </p>
-        <p>
-          <strong>Почему важно?</strong> Упрощает дисциплину и ответственность.
-        </p>
-      </div>
-
-      <div>
-        <h3>Тренинг "Создание стандартов"</h3>
-        <p>
-          <strong>Что дает?</strong> Разработка четких алгоритмов выполнения
-          задач.
-        </p>
-        <p>
-          <strong>Почему важно?</strong> Позволяет избежать человеческого
-          фактора.
-        </p>
-      </div>
-    </section>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
 
 
-
-    <!-- Section: Stages of Interaction -->
-    <section>
-      <h2>
-        В качестве бонуса к тренингу предлагаю посттренинговую поддержку в
-        течение месяца.
-      </h2>
-      <p>
-        <strong>Формат обучения:</strong> Практика, деловые игры, живые примеры.
-      </p>
-      <p>
-        <strong>Результат:</strong> Готовая система, которая работает на
-        автомате.
-      </p>
-
-      <h2>Возможные этапы взаимодействия</h2>
-
-      <ol>
-        <li><strong>Первичная консультация:</strong> Анализ и рекомендации</li>
-        <li>
-          <strong>Обучение сотрудников:</strong> Практический тренинг (8ч)
-        </li>
-        <li><strong>Выявление проблем:</strong> Изучение ситуации на месте</li>
-        <li><strong>Составление плана:</strong> Совместное обсуждение</li>
-        <li>
-          <strong>Реализация решений:</strong> Внедрение на пилотном проекте
-        </li>
-        <li><strong>Мониторинг прогресса:</strong> Регулярные собрания</li>
-      </ol>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2025 Kaizen Bureau. Все права защищены.</p>
-    </footer>
+    <!-- End Example Code -->
   </body>
 </html>
