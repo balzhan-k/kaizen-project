@@ -3,7 +3,7 @@ section img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   object-fit: cover;
   z-index: -1; /* Place the image behind the navbar */
 }
