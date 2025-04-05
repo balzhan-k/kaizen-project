@@ -1,94 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  height: auto;
-}
-
-/*hero section*/
-.hero-section {
-  min-height: 400px;
-}
-
-.hero-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 500px;
-  object-fit: cover;
-  z-index: -1;
-  filter: blur(4px);
-}
-
-figure {
-  margin: 0;
-}
-
-.blockquote {
-  position: relative;
-  z-index: 1;
-  padding: 20px 0px;
-  text-align: left;
-  font-size: 1.7em;
-  font-weight: 500;
-  font-family: "Literata", serif;
-  color: #010248;
-}
-
-.blockquote-footer {
-  color: #010248;
-  font-family: "Literata", serif;
-  margin: 0;
-}
-
-.hero-subtitle {
-  font-size: 1.2em;
-  margin: 50px 0 20px 0;
-
-  font-family: "Literata", serif;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: 400;
-  text-align: right;
-  color: #010248;
-}
-
-.hero-subtitle-text {
-  margin: 0;
-  padding: 0;
-}
-
-/*navbar*/
-.navbar-brand {
-  margin: 0;
-  padding: 10px;
-}
-
-.navbar-toggler,
-.btn-close {
-  color: #010248;
-  padding: 10px;
-}
-
-.offcanvas-title {
-  font-family: "Literata", serif;
-  font-size: 1em;
-  font-style: italic;
-  color: #010248;
-}
-
-.nav-link {
-  font-family: "Literata", serif;
-  font-size: 1em;
-  color: #010248;
-}
-
-.section {
-  background-color: #010248;
-  width: 100%;
+/*
+.container {
+  max-width: 100%;
+  /* Full width on mobile */
   margin: 0 auto;
   padding: 0 20px;
+
 }
 
 h2 {

@@ -21,11 +21,12 @@
     <link href="lg.css" rel="stylesheet" />
     <title>Kaizen Bureau</title>
   </head>
+
   <body class="p-3 m-0 border-0 bd-example m-0 border-0">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#link">
           <img
             src="KaizenLogo.png"
             alt="Logo"
@@ -35,7 +36,7 @@
           />
         </a>
         <button
-          class="navbar-toggler border border-0"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#navbarOffcanvasLg"
@@ -108,16 +109,71 @@
     </nav>
 
     <!-- hero section -->
-    <section class="container">
-      <img src="hero.jpg" class="" alt="A notebook and a laptop" />
-      <div class="hero">
-        <h1 class="text-left align-middle">
-          "Всякое знание начинается с обучения."
-        </h1>
-        <small class="text-body-secondary"> - Аристотель</small>
+    <section class="container hero-section">
+      <img src="hero.jpg" class="hero-image" alt="A notebook and a laptop" />
+      <figure>
+        <blockquote class="blockquote">
+          <p>"Всякое знание начинается с обучения."</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Аристотель</figcaption>
+      </figure>
+      <div class="hero-subtitle sticky">
+        <p class="hero-subtitle-text">Kaizen Bureau</p>
+        <p class="hero-subtitle-text">Обучение и консалтинг</p>
       </div>
-      <p class="hero-subtitle sticky">Kaizen Bureau. Обучение и консалтинг</p>
     </section>
+
+     <!-- О Кайдзен -->
+     <section class="section" id="section2">
+      <div class="container">
+        <h2>Что такое Кайдзен и его преимущества?</h2>
+        <p>
+          КАЙДЗЕН - это методика маленьких шагов к большим целям с набором
+          эффективных инструментов и наилучших мировых практик, которые
+          позволяют решить многие проблемы в бизнесе.
+        </p>
+        <p>
+          Каждая проблема является следствием на отработанных внутренних
+          коммуникаций в управлении и в рабочих процессах команды.
+        </p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h3>
+              Медленная скорость сотрудников из-за отсутствия порядка в
+              процессах
+            </h3>
+            <p>
+              Принципы Кайдзен улучшают работу и мотивацию сотрудников, что
+              поможет лучше организовать процессы и сделать работу быстрее.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>Хаос в управлении</h3>
+            <p>
+              Кайдзен предлагает эффективные инструменты для диагностики и
+              устранения возникающих проблем.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>
+              Снижение конкурентоспособности и из-за низкой продуктивности
+            </h3>
+            <p>
+              Кайдзен помогает выявить узкие места и источники потерь, как в
+              сотрудниках, так и в процессах: оптимизации и обучения с
+              использованием данной методики.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
