@@ -22,8 +22,9 @@
     <title>Kaizen Bureau</title>
   </head>
 
-  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+  <body class="p-0 m-0 border-0 bd-example m-0 border-0">
     <!-- navbar -->
+    <div class="background-container">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#link">
@@ -52,9 +53,12 @@
           aria-labelledby="navbarOffcanvasLgLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <button
+            type="button"
+            class="offcanvas-title" id="offcanvasNavbarLabel"
+            aria-label="Kaizen Bureau">
               Kaizen Bureau
-            </h5>
+            </button>
             <button
               type="button"
               class="btn-close"
@@ -109,8 +113,7 @@
     </nav>
 
     <!-- hero section -->
-    <section class="container hero-section">
-      <img src="hero.jpg" class="hero-image" alt="A notebook and a laptop" />
+    <section class="hero-section">
       <figure>
         <blockquote class="blockquote">
           <p>"Всякое знание начинается с обучения."</p>
@@ -122,6 +125,7 @@
         <p class="hero-subtitle-text">Обучение и консалтинг</p>
       </div>
     </section>
+    </div>
 
      <!-- О Кайдзен -->
      <section class="section" id="section2">
