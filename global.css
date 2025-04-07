@@ -6,8 +6,11 @@
   background: url(hero.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 50vh;
+  height: ;
   position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
 }
 
 /*navbar*/
@@ -16,23 +19,25 @@
   z-index: 1;
 }
 
-.navbar-brand {
+.navbar-brand, .navbar-toggler-icon {
   padding: 20px;
+  margin: 0;
+  border: none;
 }
 
 
 .navbar-toggler-icon {
-  filter: invert(13%) sepia(100%) saturate(7485%) hue-rotate(241deg) brightness(98%) contrast(104%);
+  color: #010248;
 }
 
 /* optional border and background */
 .navbar-toggler {
-  border: 1px solid #010248;
+  margin: 5x;
 }
 
 /* Style the close button */
 .btn-close {
-  filter: invert(13%) sepia(100%) saturate(7485%) hue-rotate(241deg) brightness(98%) contrast(104%);
+
 }
 
 .offcanvas-header {
@@ -57,7 +62,7 @@
 
 
 figure {
-  margin: 0;
+  margin: 10px;
 }
 
 .blockquote {
@@ -65,29 +70,30 @@ figure {
   z-index: 1;
   padding: 20px 0px;
   text-align: left;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 500;
   font-family: "Literata", serif;
   color: #010248;
+  margin: 0;
 }
 
 .blockquote-footer {
   color: #010248;
   font-family: "Literata", serif;
-  margin: 0;
+  margin: 0px;
 }
 
 .hero-subtitle {
   font-size: 1.2em;
-  margin: 50px 0 20px 0;
+  margin-top: 18px;
+  margin-right: 10px;
   font-family: "Literata", serif;
-  font-size: 1em;
+  font-size: 0.8em;
   font-style: italic;
   font-weight: 400;
   text-align: right;
   color: #010248;
-  position: relative; /* instead of sticky */
-  margin-bottom: 50px;
+  position: relative; /
 }
 
 .hero-subtitle-text {
@@ -95,7 +101,7 @@ figure {
   padding: 0;
 }
 
-. {
+.blue-bg {
   background-color: #010248;
   width: 100%;
   margin: 0 auto;
@@ -106,4 +112,9 @@ h2 {
   margin-bottom: 20px;
   font-size: 1.8em;
   /* Adjust font size for mobile */
+}
+
+.bi {
+  font-size: 1.7rem;
+  color: #ffffff;
 }
