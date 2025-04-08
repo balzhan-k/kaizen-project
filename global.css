@@ -1,5 +1,5 @@
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .background-container {
@@ -10,7 +10,6 @@
   position: relative;
   top: 0;
   left: 0;
-  margin-bottom: 10px;
 }
 
 /*navbar*/
@@ -19,39 +18,32 @@
   z-index: 1;
 }
 
-.navbar-brand, .navbar-toggler-icon {
+.navbar-brand,
+.navbar-toggler-icon {
   padding: 20px;
   margin: 0;
   border: none;
 }
 
-
 .navbar-toggler-icon {
   color: #010248;
 }
 
-/* optional border and background */
-.navbar-toggler {
-  margin: 5x;
-}
-
-/* Style the close button */
-.btn-close {
-
-}
-
-.offcanvas-header {
-  font-family: "Literata", serif;
-  font-size: 1em;
+.offcanvas-title {
+  font-family: "Bona Nova", serif;
+  font-size: 1.2em;
   font-style: italic;
   color: #010248;
+  text-decoration: none;
+}
 
+.btn-close {
 }
 
 .nav-link {
-  font-family: "Literata", serif;
-  font-size: 1em;
   color: #010248;
+  font-family: "Bona Nova", serif;
+  font-size: 1.1em;
 }
 
 /*hero section*/
@@ -59,7 +51,6 @@
   z-index: 1;
   position: relative;
 }
-
 
 figure {
   margin: 10px;
@@ -72,14 +63,14 @@ figure {
   text-align: left;
   font-size: 1.5em;
   font-weight: 500;
-  font-family: "Literata", serif;
+  font-family: "Bona Nova", serif;
   color: #010248;
   margin: 0;
 }
 
 .blockquote-footer {
   color: #010248;
-  font-family: "Literata", serif;
+  font-family: "Bona Nova", serif;
   margin: 0px;
 }
 
@@ -87,13 +78,13 @@ figure {
   font-size: 1.2em;
   margin-top: 18px;
   margin-right: 10px;
-  font-family: "Literata", serif;
+  font-family: "Bona Nova", serif;
   font-size: 0.8em;
   font-style: italic;
   font-weight: 400;
   text-align: right;
   color: #010248;
-  position: relative; /
+  position: relative;
 }
 
 .hero-subtitle-text {
@@ -101,17 +92,26 @@ figure {
   padding: 0;
 }
 
-.blue-bg {
+/*section 2 - О Кайдзен*/
+
+.container {
   background-color: #010248;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  min-width: 100vw;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  font-family: "Bona Nova", serif;
 }
 
-h2 {
+.section-text h2 {
+  font-size: 1.5em;
   margin-bottom: 20px;
-  font-size: 1.8em;
-  /* Adjust font size for mobile */
+  font-weight: 00;
+}
+
+.section-text p {
+  font-size: 1em;
+  margin-bottom: 20px;
 }
 
 .bi {
