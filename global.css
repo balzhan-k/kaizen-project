@@ -6,7 +6,6 @@
   background: url(hero.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
-  height: ;
   position: relative;
   top: 0;
   left: 0;
@@ -25,19 +24,12 @@
   border: none;
 }
 
-.navbar-toggler-icon {
-  color: #010248;
-}
-
 .offcanvas-title {
   font-family: "Bona Nova", serif;
   font-size: 1.2em;
   font-style: italic;
   color: #010248;
   text-decoration: none;
-}
-
-.btn-close {
 }
 
 .nav-link {
@@ -98,7 +90,7 @@ figure {
   background-color: #010248;
   min-width: 100vw;
   margin: 0;
-  padding: 20px;
+  padding: 40px;
   color: white;
   font-family: "Bona Nova", serif;
 }
@@ -112,9 +104,21 @@ figure {
 .section-text p {
   font-size: 1em;
   margin-bottom: 20px;
+  line-height: 1em;
+}
+
+.row h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  }
+
+  .row p {
+  font-size: 1em;
+  line-height: 1em;
 }
 
 .bi {
   font-size: 1.7rem;
   color: #ffffff;
 }
+
