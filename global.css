@@ -2,24 +2,32 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 76px; /* or adjust based on your navbar height */
+}
+
+
 .background-container {
   background: url(hero.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
+
 }
 
 /*navbar*/
 .navbar {
-  height: 80px;
-  z-index: 1;
+  z-index: 1050; /* Bootstrap default */
+  transition: all 0.5s;
 }
 
-.navbar-brand,
+.navbar-scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px rgba(197, 40, 40, 0.1);
+}
+
+
 .navbar-toggler-icon {
-  padding: 20px;
+
   margin: 0;
   border: none;
 }
