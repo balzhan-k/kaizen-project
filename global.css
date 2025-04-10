@@ -6,12 +6,10 @@ body {
   padding-top: 76px; /* or adjust based on your navbar height */
 }
 
-
 .background-container {
   background: url(hero.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
-
 }
 
 /*navbar*/
@@ -25,9 +23,7 @@ body {
   box-shadow: 0 3px 10px rgba(197, 40, 40, 0.1);
 }
 
-
 .navbar-toggler-icon {
-
   margin: 0;
   border: none;
 }
@@ -95,12 +91,15 @@ figure {
 /*section 2 - О Кайдзен*/
 
 .container {
-  background-color: #010248;
   min-width: 100vw;
   margin: 0;
   padding: 40px;
   color: white;
   font-family: "Bona Nova", serif;
+}
+
+.container-blue {
+  background-color: #010248;
 }
 
 .section-text h2 {
@@ -118,9 +117,9 @@ figure {
 .row h3 {
   font-size: 1.2em;
   font-weight: normal;
-  }
+}
 
-  .row p {
+.row p {
   font-size: 1em;
   line-height: 1em;
 }
@@ -130,3 +129,8 @@ figure {
   color: #ffffff;
 }
 
+
+/*section 3 */
+.container-grey {
+  background-color: #F0F0F0
+}
