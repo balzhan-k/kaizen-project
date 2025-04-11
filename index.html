@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link href="global.css" rel="stylesheet" />
     <link href="lg.css" rel="stylesheet" />
     <title>Kaizen Bureau</title>
@@ -30,8 +34,8 @@
     <div class="background-container container-fluid">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#link">
+        <div class="container-fluid navbar-container">
+          <a class="navbar-brand p-2 m-0" href="#link">
             <img
               src="KaizenLogo.png"
               alt="Logo"
@@ -144,7 +148,7 @@
         <div class="col-sm">
           <i class="bi bi-box"></i>
           <h3>
-            Медленная скорость сотрудников из-за отсутствия порядка в процессах
+            Низкая скорость из-за отсутствия порядка в процессах
           </h3>
           <p>
             Принципы Кайдзен улучшают работу и мотивацию сотрудников, что
@@ -153,7 +157,7 @@
         </div>
         <div class="col-sm">
           <i class="bi bi-box"></i>
-          <h3>Хаос в управлении</h3>
+          <h3>Хаос в административной и управленческой деятельности</h3>
           <p>
             Кайдзен предлагает эффективные инструменты для диагностики и
             устранения возникающих проблем.
@@ -169,6 +173,7 @@
           </p>
         </div>
       </div>
+      <div class="line"></div>
       <div class="row">
         <div class="col-sm-12">
           <p>
@@ -179,21 +184,125 @@
       </div>
     </div>
 
-
     <!-- section 3  -->
-    <div class="container container-grey text-center">
+    <div class="container container-grey text-center section-text">
       <div class="row">
         <div class="col-sm text-black">
           <h2>Почему методика Кайдзен?</h2>
-          <p>Потому что она популярна в мировом бизнес-сообществе и работает на 100%?</p>
-          <p><a href="#" class="link-dark">Записаться</a></p>
+          <p>
+            Потому что она популярна в мировом бизнес-сообществе и работает на
+            100%?
+          </p>
+          <p class="sign-in-button"><a href="#" class="link-dark">Записаться ></a></p>
         </div>
-        <div class="col-sm">
-          2 of 2
-        </div>
-      </div>
+        <div class="col-sm ">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header m-0">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                <strong>Постоянное улучшение</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+                style="text-align: left;"
+              >
+                <div class="accordion-body">
+                  Вместо резких изменений методика предполагает небольшие, но
+                  регулярные улучшения, что снижает стресс и сопротивление
+                  сотрудников.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header m-0">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <strong>Вовлечение всех сотрудников</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+                style="text-align: left;"
+              >
+                <div class="accordion-body">
+                  Каждый работник, независимо от уровня, может вносить предложения по
+                  улучшению, что повышает мотивацию и эффективность команды.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header m-0">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <strong>Оптимизация процессов и снижение затрат</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+                style="text-align: left;"
+              >
+                <div class="accordion-body">
+                  Кайдзен помогает выявлять слабые места и устранять потери (муда),
+                  что делает производство и бизнес-процессы более эффективными.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header m-0">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  <strong>Гибкость и адаптивность</strong>
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+                style="text-align: left;"
+              >
+                <div class="accordion-body">
+                  Метод легко адаптируется к разным сферам: от производства до
+                  управления персоналом и даже личной эффективности.
+                </div>
+              </div>
+            </div>
+          </div>
 
+        </div>
       </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"

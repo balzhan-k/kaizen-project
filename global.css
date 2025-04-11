@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
-}
-
-body {
-  padding-top: 76px; /* or adjust based on your navbar height */
+  margin: 0;
+  padding: 0;
 }
 
 .background-container {
@@ -14,18 +12,7 @@ body {
 
 /*navbar*/
 .navbar {
-  z-index: 1050; /* Bootstrap default */
-  transition: all 0.5s;
-}
-
-.navbar-scrolled {
-  background-color: #ffffff;
-  box-shadow: 0 3px 10px rgba(197, 40, 40, 0.1);
-}
-
-.navbar-toggler-icon {
-  margin: 0;
-  border: none;
+  padding-top: 25px;
 }
 
 .offcanvas-title {
@@ -55,10 +42,10 @@ figure {
 .blockquote {
   position: relative;
   z-index: 1;
-  padding: 20px 0px;
+  padding: 20px 20px 20px 0;
   text-align: left;
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 2em;
+  font-weight: 600;
   font-family: "Bona Nova", serif;
   color: #010248;
   margin: 0;
@@ -72,15 +59,13 @@ figure {
 
 .hero-subtitle {
   font-size: 1.2em;
-  margin-top: 18px;
-  margin-right: 10px;
+  padding: 10px;
   font-family: "Bona Nova", serif;
-  font-size: 0.8em;
+  font-size: 1em;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   text-align: right;
   color: #010248;
-  position: relative;
 }
 
 .hero-subtitle-text {
@@ -95,7 +80,6 @@ figure {
   margin: 0;
   padding: 40px;
   color: white;
-  font-family: "Bona Nova", serif;
 }
 
 .container-blue {
@@ -103,34 +87,64 @@ figure {
 }
 
 .section-text h2 {
-  font-size: 1.5em;
+  font-family: "Bona Nova", serif;
+  font-size: 1.6em;
   margin-bottom: 20px;
-  font-weight: 00;
+  font-weight: 600;
 }
 
 .section-text p {
-  font-size: 1em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.2em;
   margin-bottom: 20px;
-  line-height: 1em;
 }
 
 .row h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: normal;
+  font-family: "Bona Nova", serif;
 }
 
 .row p {
   font-size: 1em;
-  line-height: 1em;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-.bi {
-  font-size: 1.7rem;
-  color: #ffffff;
+.bi-box {
+  font-size: 2em;
 }
 
+.line {
+  height: 2px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 20px 0;
+}
 
 /*section 3 */
 .container-grey {
-  background-color: #F0F0F0
+  background-color: #f0f0f0;
+}
+
+.sign-in-button {
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.accordion-button {
+  font-family: "Bona Nova", serif;
+  font-size: 0.7em;
+  color: #000000;
+}
+
+.accordion {
+  margin-bottom: 20px;
+}
+
+.accordion-body {
+  font-family: "Bona Nova", serif;
 }
