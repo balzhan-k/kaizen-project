@@ -116,7 +116,7 @@ figure {
 }
 
 .line {
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: #f0f0f0;
   margin: 20px 0;
@@ -137,11 +137,16 @@ figure {
 
 .accordion-button {
   font-family: "Bona Nova", serif;
-  font-size: 0.7em;
+  font-size: em;
   color: #000000;
 }
 
+.faq-accordion {
+  margin-top: 20px;
+}
+
 .accordion {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
