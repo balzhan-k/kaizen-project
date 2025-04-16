@@ -10,8 +10,11 @@ padding: 5px 20px;
 
 /*FAQ section*/
 .sign-in-button {
-  padding: 5px 10px;
+  margin: 20px auto;
+ padding: 10px;
+ width: 20%;
   font-size: 1.2em;
+
 }
 
 .accordion {
