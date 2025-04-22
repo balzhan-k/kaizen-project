@@ -128,7 +128,7 @@ figure {
 }
 
 .sign-in-button {
-    border: 1px solid #000000;
+  border: 1px solid #000000;
   border-radius: 5px;
   padding: 10px 20px;
 }
@@ -140,7 +140,7 @@ figure {
 
 .accordion-button {
   font-family: "IBM Plex Sans", sans-serif;
-   color: #000000;
+  color: #000000;
 }
 
 .faq-accordion {
