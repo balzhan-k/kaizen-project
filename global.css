@@ -170,3 +170,21 @@ h5 {
   color: #010248;
   font-family: "Bona Nova", serif;
 }
+
+/* section 5 - Алгоритм */
+.step-box {
+  position: relative;
+  padding-left: 2.5rem;
+  border-left: 1px solid #000; /*  left line */
+  min-height: 100px;
+}
+
+.step-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2rem; /* large number */
+  font-weight: bold;
+  color: #000;
+  line-height: 1;
+}
