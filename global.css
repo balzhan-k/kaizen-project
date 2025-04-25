@@ -174,17 +174,18 @@ h5 {
 /* section 5 - Алгоритм */
 .step-box {
   position: relative;
-  padding-left: 2.5rem;
-  border-left: 1px solid #000; /*  left line */
+  padding-left: 3rem;
+  padding-top: 2rem;
+  border-left: 1px solid #000;
   min-height: 100px;
 }
 
 .step-number {
   position: absolute;
-  left: 0;
+  left: 0.5rem;
   top: 0;
-  font-size: 2rem; /* large number */
-  font-weight: bold;
+  font-size: 5rem;
+  font-weight: ;
   color: #000;
   line-height: 1;
 }
