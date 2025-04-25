@@ -3,172 +3,30 @@
   margin: 0;
   padding: 0;
 }
-
+/*navbar*/
 .background-container {
   background: url(hero.jpg) no-repeat center;
   background-size: cover;
-  width: 100%;
-}
-
-/*navbar*/
-.navbar {
-  padding-top: 25px;
-}
-
-.offcanvas-title {
-  font-family: "Bona Nova", serif;
-  font-size: 1.2em;
-  font-style: italic;
-  color: #010248;
-  text-decoration: none;
-}
-
-.nav-link {
-  color: #010248;
-  font-family: "Bona Nova", serif;
-  font-size: 1.1em;
-}
-
-/*hero section*/
-.hero-section {
-  z-index: 1;
-  position: relative;
-}
-
-figure {
-  margin: 10px;
-}
-
-.blockquote {
-  position: relative;
-  z-index: 1;
-  padding: 20px 20px 20px 0;
-  text-align: left;
-  font-size: 2em;
-  font-weight: 600;
-  font-family: "Bona Nova", serif;
-  color: #010248;
-  margin: 0;
-}
-
-.blockquote-footer {
-  color: #010248;
-  font-family: "Bona Nova", serif;
-  margin: 0px;
-}
-
-.hero-subtitle {
-  font-size: 1.2em;
-  padding: 10px;
-  font-family: "Bona Nova", serif;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: 500;
-  text-align: right;
-  color: #010248;
-}
-
-.hero-subtitle-text {
-  margin: 0;
-  padding: 0;
 }
 
 /*section 2 - О Кайдзен*/
-
-.container {
-  min-width: 100vw;
-  margin: 0;
-  padding: 40px;
-  color: white;
-}
 
 .container-blue {
   background-color: #010248;
 }
 
-.section-text h2 {
+.font-bona {
   font-family: "Bona Nova", serif;
-  font-size: 1.6em;
-  margin-bottom: 20px;
-  font-weight: 600;
 }
 
-.section-text p {
+.font-ibm {
   font-family: "IBM Plex Sans", sans-serif;
   font-optical-sizing: auto;
-  font-size: 1.2em;
-  margin-bottom: 20px;
 }
 
-.row h3 {
-  font-size: 1.4em;
-  font-weight: normal;
-  font-family: "Bona Nova", serif;
-}
-
-.row p {
-  font-size: 1em;
-  font-family: "IBM Plex Sans", sans-serif;
-}
-
-.bi-box {
-  font-size: 2em;
-}
-
-.line {
-  height: 1px;
-  width: 100%;
-  background-color: #f0f0f0;
-  margin: 20px 0;
-}
-
-/*section 3 - Почему Кайдзен*/
+/*section 3 - Почему методика Кайдзен*/
 .container-grey {
   background-color: #f0f0f0;
-}
-
-.sign-in-button {
-  border: 1px solid #000000;
-  border-radius: 5px;
-  padding: 10px 20px;
-}
-
-.link-dark {
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.accordion-button {
-  font-family: "IBM Plex Sans", sans-serif;
-  color: #000000;
-}
-
-.faq-accordion {
-  margin-top: 20px;
-}
-
-.accordion {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.accordion-body {
-  font-family: "IBM Plex Sans", sans-serif;
-}
-
-/* section 4 - обучение руководителей и сотрудников */
-h5 {
-  font-family: "Bona Nova", serif;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-/* section 5 - Кайдзен тренер */
-.blockquote-small {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #010248;
-  font-family: "Bona Nova", serif;
 }
 
 /* section 5 - Алгоритм */
