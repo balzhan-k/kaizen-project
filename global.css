@@ -5,7 +5,7 @@
 }
 /*navbar*/
 .background-container {
-  background: url(hero.jpg) no-repeat center;
+  background: url(./images/hero.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -32,18 +32,43 @@
 /* section 5 - Алгоритм */
 .step-box {
   position: relative;
-  padding-left: 3rem;
-  padding-top: 2rem;
+  padding-left: 2rem;
   border-left: 1px solid #000;
-  min-height: 100px;
 }
 
 .step-number {
-  position: absolute;
-  left: 0.5rem;
-  top: 0;
-  font-size: 5rem;
-  font-weight: ;
-  color: #000;
-  line-height: 1;
+  font-size: 4rem;
 }
+
+#caseSlider {
+  scroll-snap-type: x mandatory;
+}
+
+.case-item {
+  scroll-snap-align: start;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.consultation-section {
+  background: url('./images/bw.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 50vh;
+  padding: 80px 20px;
+}
+
+

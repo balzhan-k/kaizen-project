@@ -30,14 +30,14 @@
     <title>Kaizen Bureau</title>
   </head>
 
-  <body class="p-0 m-0 border-0 bd-example m-0 border-0">
-    <div class="background-container container-fluid">
+  <body class="p-0 m-0 border-0 bd-example border-0">
+    <header class="background-container container-fluid">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg fixed-top pt-4">
         <div class="container-fluid navbar-container">
           <a class="navbar-brand p-2 m-0" href="#link">
             <img
-              src="KaizenLogo.png"
+              src="./logo/KaizenLogo.png"
               alt="Logo"
               width="50"
               height="50"
@@ -153,7 +153,7 @@
 
       <!-- hero section -->
       <section class="position-relative z-1">
-        <figure class="m-2">
+        <figure class="m-2 pb-4">
           <blockquote
             class="blockquote position-relative z-1 ps-0 p-3 text-start fw-semibold text-primary-emphasis"
             style="font-family: 'Bona Nova', serif"
@@ -167,15 +167,8 @@
             Аристотель
           </figcaption>
         </figure>
-        <div
-          class="px-3 text-end text-primary-emphasis fst-italic fw-medium pb-4"
-          style="font-family: 'Bona Nova', serif"
-        >
-          <p class="m-0 p-0">Kaizen Bureau</p>
-          <p class="m-0 p-0">Обучение и консалтинг</p>
-        </div>
       </section>
-    </div>
+    </header>
 
     <!-- О Кайдзен -->
     <div class="container-fluid container-blue text-white text-center p-5">
@@ -370,7 +363,10 @@
       </h2>
       <div class="card-group">
         <div class="card p-2">
-          <img src="./manager.jpg" alt="Business woman leading meeting" />
+          <img
+            src="./images/manager.jpg"
+            alt="Business woman leading meeting"
+          />
           <div class="card-body">
             <h5 class="card-title font-bona fw-semibold">Для руководителя</h5>
             <ul class="font-ibm">
@@ -394,7 +390,7 @@
           </div>
         </div>
         <div class="card p-2">
-          <img src="./employees.jpg" alt="Employees in a meeting" />
+          <img src="./images/employees.jpg" alt="Employees in a meeting" />
           <div class="card-body">
             <h5 class="card-title font-bona fw-semibold">Для сотрудников</h5>
             <ul class="font-ibm">
@@ -467,16 +463,87 @@
         </div>
         <div class="col-sm-6 p-2">
           <img
-            src="./symbatBlurBg.jpg"
+            src="./images/kaizenCoach.jpg"
             class="img-fluid rounded-4"
             alt="Kaizen coach photo"
           />
         </div>
       </div>
     </div>
-    <div class="container container-grey container-fluid">
+
+    <!-- section 6 - Алгоритм -->
+    <div class="container-fluid container-grey text-dark p-5">
+      <div class="col">
+        <div class="col mb-4">
+          <h2 class="fw-semibold font-bona mb-3">
+            Алгоритм внедрения методики Кайдзен
+          </h2>
+          <p class="font-ibm">
+            Любому руководителю или собственнику сложно решиться на изменения в
+            компании. Важно правильно оценить ресурсы и понять готовность
+            навести порядок. Поэтому я приглашаю вас на консультацию
+          </p>
+          <p class="text-left pt-3">
+            <a href="#" class="btn btn-outline-dark font-ibm" role="button"
+              >Записаться на консультацию ></a
+            >
+          </p>
+        </div>
+
+        <!-- Bootstrap 5 grid -->
+        <div class="container-fluid">
+          <div class="row text-left g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="step-box">
+                <p class="step-number fw-bold font-ibm">1</p>
+                <p class="font-bona fs-5">
+                  Первичная КОНСУЛЬТАЦИЯ - анализ и рекомендации
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="step-box">
+                <p class="step-number fw-bold font-ibm">2</p>
+                <p class="font-bona fs-5">ДИАГНОСТИКА предприятия на месте</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="step-box">
+                <p class="step-number fw-bold font-ibm">3</p>
+                <p class="font-bona fs-5">Составление ПЛАНА ДЕЙСТВИЙ</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="step-box">
+                <p class="step-number fw-bold font-ibm">4</p>
+                <p class="font-bona fs-5">РЕАЛИЗАЦИЯ решений</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="step-box">
+                <p class="step-number fw-bold font-ibm">5</p>
+                <p class="font-bona fs-5">МОНИТОРИНГ плана</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="step-box">
+                <p class="step-number fw-bold font-ibm">6</p>
+                <p class="font-bona fs-5">Дальнейшее СОВЕРШЕНСТВОВАНИЕ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-blue container-fluid p-5">
       <figure class="text-center border border-2 p-3 bg-light">
-        <blockquote class="blockquote-small text-dark">
+        <blockquote class="font-ibm text-dark">
           <p>
             "Наше сотрудничество построено на принципе гибкости. Вы всегда
             можете остановиться на любом этапе, когда сочтете нужным работать
@@ -484,72 +551,314 @@
             сразу перейти к следующему."
           </p>
         </blockquote>
-        <figcaption class="blockquote-footer text-dark">
+        <figcaption class="blockquote-footer text-dark pt-3 font-ibm">
           Сымбат Кадыр
         </figcaption>
       </figure>
     </div>
-    <!-- set an image-->
-    <!-- section 6 - Алгоритм -->
-    <section class="container container-grey text-dark py-5 section-text">
-      <div class="col">
-        <div class="row mb-4">
+
+    <div class="container-fluid container-grey text-left p-5">
+      <div class="row">
+        <div class="col-sm text-black">
           <h2 class="fw-semibold font-bona mb-3">
-            Алгоритм внедрения методики Кайдзен
+            Можно ли найти ифнормацию и самостоятельно обучиться и внедрить
+            методику?
           </h2>
-          <p>
-            Любому руководителю или собственнику сложно решиться на изменения в
-            компании. Важно правильно оценить ресурсы и понять готовность
-            навести порядок. Поэтому я приглашаю вас на консультацию
-          </p>
-          <button class="btn btn-outline-dark mt-3">
-            Записаться на консультацию >
-          </button>
         </div>
 
-        <!-- Right Column: Steps Grid -->
-        <div class="col-lg-7">
-          <div class="row g-4">
-            <div class="col-md-6">
-              <div class="step-box">
-                <div class="step-number">1</div>
-                Первичная КОНСУЛЬТАЦИЯ – анализ и рекомендации
-              </div>
+        <div class="col-sm">
+          <p class="font-ibm mb-2">Да, возможно.</p>
+          <p class="font-ibm">В чем же преимущества помощи тренера?</p>
+
+          <div class="row mb-2">
+            <div class="col-auto">
+              <i class="bi bi-box fs-3"></i>
             </div>
-            <div class="col-md-6">
-              <div class="step-box">
-                <div class="step-number">2</div>
-                ДИАГНОСТИКА предприятия на месте
-              </div>
+            <div class="col">
+              <p class="font-ibm mb-0">
+                Экспертный взгляд со стороны – <br />
+                помогает выявить слабые места и зоны роста, которые не всегда
+                заметны внутри компании.
+              </p>
             </div>
-            <div class="col-md-6">
-              <div class="step-box">
-                <div class="step-number">3</div>
-                Составление ПЛАНА ДЕЙСТВИЙ
-              </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-auto">
+              <i class="bi bi-box fs-3"></i>
             </div>
-            <div class="col-md-6">
-              <div class="step-box">
-                <div class="step-number">4</div>
-                РЕАЛИЗАЦИЯ решений
-              </div>
+            <div class="col">
+              <p class="font-ibm mb-0">
+                Правильное внедрение – <br />
+                консультант обучает сотрудников, устраняет ошибки и адаптирует
+                методику под ваш бизнес.
+              </p>
             </div>
-            <div class="col-md-6">
-              <div class="step-box">
-                <div class="step-number">5</div>
-                МОНИТОРИНГ плана
-              </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-auto">
+              <i class="bi bi-box fs-3"></i>
             </div>
-            <div class="col-md-6">
-              <div class="step-box">
-                <div class="step-number">6</div>
-                Дальнейшее СОВЕРШЕНСТВОВАНИЕ
-              </div>
+            <div class="col">
+              <p class="font-ibm mb-0">
+                Экономия времени и ресурсов – <br />
+                вместо проб и ошибок вы сразу получаете эффективные и
+                проверенные решения.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-auto">
+              <i class="bi bi-box fs-3"></i>
+            </div>
+            <div class="col">
+              <p class="font-ibm mb-0">
+                Поддержка и мотивация – <br />
+                консультант помогает преодолеть сопротивление изменениям и
+                вдохновляет команду.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="container-fluid container-blue text-left p-5">
+      <div class="row align-items-center">
+        <!-- LEFT SIDE: Title -->
+        <div class="col-md-6 text-white">
+          <h2 class="fw-semibold font-bona mb-3 p-4">
+            Примеры реальных кейсов
+          </h2>
+        </div>
+
+        <!-- RIGHT SIDE: Slider -->
+        <div class="col-md-6 position-relative">
+          <div
+            id="caseSlider"
+            class="d-flex overflow-hidden text-white border border-light"
+            style="scroll-snap-type: x mandatory"
+          >
+            <!-- CASES -->
+            <div
+              class="case-item p-4 flex-shrink-0"
+              style="width: 100%; scroll-snap-align: start"
+            >
+              <h5 class="font-ibm mb-0">Проект: Общепит</h5>
+              <p class="font-ibm">(4 торговые точки, 100 сотрудников)</p>
+              <h6 class="font-ibm">Проблемы:</h6>
+              <ul class="font-ibm">
+                <li>Текучка персонала</li>
+                <li>Низкая прибыль</li>
+                <li>Не всегда стабильное качество продукции</li>
+                <li>Размытый функционал сотрудников</li>
+              </ul>
+              <h6 class="font-ibm">Решения:</h6>
+              <ul class="font-ibm">
+                <li>Создана оптимальная оргструктура</li>
+                <li>Прописаны основные бизнес-процессы</li>
+                <li>Введены стандарты качества продукции</li>
+                <li>Разработана программа адаптации новых сотрудников</li>
+              </ul>
+              <h6 class="font-ibm">Результаты:</h6>
+              <ul class="font-ibm">
+                <li>
+                  Собственник получил чёткое понимание, как увеличивать прибыль
+                  через снижение себестоимости. Провел аудит активов
+                </li>
+                <li>
+                  Компания успешно продолжила самостоятельную работу по
+                  принципам Кайдзен философии
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="case-item p-4 flex-shrink-0"
+              style="width: 100%; scroll-snap-align: start"
+            >
+              <h5 class="font-ibm mb-0">Проект: Клининг</h5>
+              <p class="font-ibm">(20 объектов, 1000 сотрудников)</p>
+              <h6 class="font-ibm">Проблемы:</h6>
+              <ul class="font-ibm">
+                <li>Высокая текучка персонала (включая топ-менеджмент)</li>
+                <li>Неуправляемая операционная деятельность</li>
+                <li>Не всегда стабильное качество продукции</li>
+                <li>Отток клиентов</li>
+              </ul>
+              <h6 class="font-ibm">Решения:</h6>
+              <ul class="font-ibm">
+                <li>Введены контрольные листы и KPI</li>
+                <li>Созданы графики уборки и учёт расходных материалов</li>
+                <li>Установлены маршруты сотрудников и паспорта объектов</li>
+                <li>Улучшены условия труда</li>
+                <li>Усилен управленческий ресурс с четким функционалом</li>
+              </ul>
+              <h6 class="font-ibm">Результаты:</h6>
+              <ul class="font-ibm">
+                <li>Управляемость операционной деятельностью выросла</li>
+                <li>Оптимизация ФОТ без привлечения дополнительных средств</li>
+                <li>Собственник выделил время на стратегические вопросы</li>
+              </ul>
+            </div>
+
+            <div
+              class="case-item p-4 flex-shrink-0"
+              style="width: 100%; scroll-snap-align: start"
+            >
+              <h5 class="font-ibm mb-0">Проект: Гостиничный бизнес</h5>
+              <p class="font-ibm">(1 объект, 50 сотрудников)</p>
+              <h6 class="font-ibm">Проблемы:</h6>
+              <ul class="font-ibm">
+                <li>Большие временные затраты на производство услуги</li>
+                <li>Необходимость в постоянном увеличении штата</li>
+                <li>Жалобы на качество</li>
+              </ul>
+              <h6 class="font-ibm">Решения:</h6>
+              <ul class="font-ibm">
+                <li>Составлен алгоритм действий в каждом процессе</li>
+                <li>Прописаны понятные визуальные схемы</li>
+                <li>Определены узкие места</li>
+                <li>Обучение топ-менеджмента методам решения проблем</li>
+              </ul>
+              <h6 class="font-ibm">Результаты:</h6>
+              <ul class="font-ibm">
+                <li>
+                  Определились показатели измерения результативности работы
+                  сотрудников
+                </li>
+                <li>
+                  Повысилась вовлеченность сотрудников в повышение
+                  производительности и облегчение труда
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="case-item p-4 flex-shrink-0"
+              style="width: 100%; scroll-snap-align: start"
+            >
+              <h5 class="font-ibm mb-0">Проект: Государственный сектор</h5>
+              <p class="font-ibm">
+                (топ-менеджмент региональных департаментов, 35 человек)
+              </p>
+              <h6 class="font-ibm">Проблемы:</h6>
+              <ul class="font-ibm">
+                <li>Низкая результативность исполнителей</li>
+                <li>Отсутствие четкой зоны ответственности</li>
+                <li>Долгая адаптация новых сотрудников</li>
+              </ul>
+              <h6 class="font-ibm">Решения:</h6>
+              <ul class="font-ibm">
+                <li>Анализ основного процесса</li>
+                <li>Поиск лучших практик через интервью</li>
+                <li>Обучение линейного персонала процессному подходу</li>
+              </ul>
+              <h6 class="font-ibm">Результаты:</h6>
+              <ul class="font-ibm">
+                <li>
+                  Определён стандарт работы, который даёт отличный результат
+                </li>
+                <li>
+                  Появилось понимание менеджерами роли контроля в достижении
+                  плановых показателей работы отдела
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Dots -->
+          <!-- Dots and Buttons Wrapper -->
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <!-- Dots -->
+            <div class="text-left">
+              <span class="dot active" onclick="goToSlide(0)"></span>
+              <span class="dot" onclick="goToSlide(1)"></span>
+              <span class="dot" onclick="goToSlide(2)"></span>
+              <span class="dot" onclick="goToSlide(3)"></span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="d-flex gap-2">
+              <button
+                onclick="scrollToLeft()"
+                class="btn btn-outline-light rounded-circle position-static"
+                style="width: 40px; height: 40px"
+              >
+                &#8592;
+              </button>
+
+              <button
+                onclick="scrollToRight()"
+                class="btn btn-outline-light rounded-circle position-static"
+                style="width: 40px; height: 40px"
+              >
+                &#8594;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-5 text-left consultation-section text-white">
+      <div class="row">
+        <div class="col-md-12 font-ibm">
+          <h2 class="mb-4">Запишитесь на консультацию сегодня</h2>
+          <p>
+            <strong>Формат консультации:</strong> Онлайн (Zoom, Google Meet) или
+            офлайн (по договорённости)
+          </p>
+          <p><strong>Длительность:</strong> 60 минут</p>
+          <p>
+            <strong>Состав участников:</strong> Вы и ключевые сотрудники (если
+            требуется)
+          </p>
+          <p>
+            <strong>Результат:</strong> Краткий отчёт с выявленными проблемами и
+            рекомендациями.
+          </p>
+          <button class="btn btn-outline-light consultation-button mt-3">
+            Записаться
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="contact-section bg-light py-5">
+      <div class="container text-center">
+        <div class="mb-4">
+          <div
+            class="fst-italic fw-semibold pb-4"
+            style="font-family: 'Bona Nova', serif"
+          >
+            <p class="m-0 p-0">
+              Kaizen Bureau. <br />
+              Обучение и консалтинг.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-4 mb-4">
+          <a href="#" class="text-dark fs-4" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-dark fs-4" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="#" class="text-dark fs-4" aria-label="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="#" class="text-dark fs-4" aria-label="Phone">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+        </div>
+
+        <p class="text-muted small mb-0">© 2025 Все права защищены.</p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
