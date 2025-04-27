@@ -1,9 +1,8 @@
-@media (min-width: 768px) {
-  .navbar-container {
-    padding: 5px 20px;
+@media (min-width: 770px) {
+  .section-box {
+    max-width: 400px;
+    margin: auto;
   }
-
-  /*О кайдзен*/
 
   /*FAQ section*/
   .sign-in-button {

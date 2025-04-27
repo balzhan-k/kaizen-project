@@ -1,7 +1,37 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-white", "shadow-sm");
+      navbar.classList.remove("bg-transparent");
+    } else {
+      navbar.classList.remove("bg-white", "shadow-sm");
+      navbar.classList.add("bg-transparent");
+    }
+  });
+
+  const offcanvasElement = document.getElementById("navbarOffcanvasLg");
+  const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+  document
+    .querySelectorAll(".offcanvas-body .nav-link")
+    .forEach(function (link) {
+      link.addEventListener("click", function () {
+        offcanvas.hide();
+      });
+    });
+
+  const offcanvasHeaderLink = document.getElementById("offcanvasNavbarLabel");
+  offcanvasHeaderLink.addEventListener("click", function () {
+    offcanvas.hide();
+  });
+});
+
 let currentIndex = 0;
-const slider = document.getElementById('caseSlider');
-const caseItems = document.querySelectorAll('.case-item');
-const dots = document.querySelectorAll('.dot');
+const slider = document.getElementById("caseSlider");
+const caseItems = document.querySelectorAll(".case-item");
+const dots = document.querySelectorAll(".dot");
 const totalCases = caseItems.length;
 let isManualScroll = false;
 
@@ -11,16 +41,16 @@ function updateSlider() {
   const itemWidth = slider.offsetWidth;
   slider.scrollTo({
     left: currentIndex * itemWidth,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
   updateDots();
-  setTimeout(() => isManualScroll = false, 500);
+  setTimeout(() => (isManualScroll = false), 500);
 }
 
 // Update active dot
 function updateDots() {
   dots.forEach((dot, idx) => {
-    dot.classList.toggle('active', idx === currentIndex);
+    dot.classList.toggle("active", idx === currentIndex);
   });
 }
 
@@ -43,7 +73,7 @@ function goToSlide(index) {
 }
 
 // Handle finger swipe scroll
-slider.addEventListener('scroll', () => {
+slider.addEventListener("scroll", () => {
   if (isManualScroll) return;
   const itemWidth = slider.offsetWidth;
   const newIndex = Math.round(slider.scrollLeft / itemWidth);
@@ -55,8 +85,7 @@ slider.addEventListener('scroll', () => {
 
 // Initialize dots
 dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
+  dot.addEventListener("click", () => {
     goToSlide(index);
   });
 });
-

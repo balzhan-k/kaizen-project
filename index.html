@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
-      rel="stylesheet"
-    />
+
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,17 +26,21 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom Stylesheets -->
     <link href="global.css" rel="stylesheet" />
     <link href="lg.css" rel="stylesheet" />
     <title>Kaizen Bureau</title>
   </head>
 
-  <body class="p-0 m-0 border-0 bd-example border-0">
-    <header class="background-container container-fluid">
+  <body class="p-0 m-0 border-0 bd-example border-0 container-grey">
+    <header id="home" class="background-container container-fluid">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg fixed-top pt-4">
+      <nav
+        id="navbar"
+        class="navbar navbar-nav-scroll navbar-expand-lg navbar-light bg-transparent fixed-top p-0"
+      >
         <div class="container-fluid navbar-container">
-          <a class="navbar-brand p-2 m-0" href="#link">
+          <a class="navbar-brand p-2 m-0" href="#home">
             <img
               src="./logo/KaizenLogo.png"
               alt="Logo"
@@ -54,6 +59,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -66,6 +72,7 @@
                 class="fs-5 fst-italic text-primary-emphasis text-decoration-none"
                 style="font-family: 'Bona Nova', serif"
                 id="offcanvasNavbarLabel"
+                href="#home"
                 >Kaizen Bureau</a
               >
               <button
@@ -75,14 +82,15 @@
                 aria-label="Close"
               ></button>
             </div>
+
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
                   <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    class="nav-link mx-lg-2 text-primary-emphasis px-0"
                     style="font-family: 'Bona Nova', serif"
                     aria-current="page"
-                    href="#"
+                    href="#about"
                     >О Кайдзен</a
                   >
                 </li>
@@ -90,7 +98,7 @@
                   <a
                     class="nav-link mx-lg-2 text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
-                    href="#"
+                    href="#whyKaizen"
                     >Почему Кайдзен</a
                   >
                 </li>
@@ -98,7 +106,7 @@
                   <a
                     class="nav-link mx-lg-2 text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
-                    href="#"
+                    href="#training"
                     >Обучение</a
                   >
                 </li>
@@ -106,7 +114,7 @@
                   <a
                     class="nav-link mx-lg-2 text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
-                    href="#"
+                    href="#kaizenCoach"
                     >Кайдзен тренер</a
                   >
                 </li>
@@ -114,34 +122,31 @@
                   <a
                     class="nav-link mx-lg-2 text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
-                    href="#"
+                    href="#algorythm"
                     >Алгоритм</a
                   >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6 dropdown-toggle"
-                    style="font-family: 'Bona Nova', serif"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Кейсы
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">1</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">2</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">3</a></li>
-                  </ul>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link mx-lg-2 text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
-                    href="#"
+                    href="#benefits"
+                    >Преимущества</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    style="font-family: 'Bona Nova', serif"
+                    href="#cases"
+                    >Кейсы</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    style="font-family: 'Bona Nova', serif"
+                    href="#consultation"
                     >Контакты</a
                   >
                 </li>
@@ -152,8 +157,8 @@
       </nav>
 
       <!-- hero section -->
-      <section class="position-relative z-1">
-        <figure class="m-2 pb-4">
+      <section class="position-relative z-1 pt-5 p-4">
+        <figure>
           <blockquote
             class="blockquote position-relative z-1 ps-0 p-3 text-start fw-semibold text-primary-emphasis"
             style="font-family: 'Bona Nova', serif"
@@ -171,13 +176,16 @@
     </header>
 
     <!-- О Кайдзен -->
-    <div class="container-fluid container-blue text-white text-center p-5">
+    <div
+      id="about"
+      class="container-fluid container-blue text-white text-center p-5"
+    >
       <div class="row mb-4">
         <div class="col-lg-10 mx-auto">
-          <h2 class="fw-semibold font-bona mb-3">
+          <h2 class="fw-semibold font-bona mb-3" style="margin-top: 50px">
             Что такое Кайдзен и его преимущества?
           </h2>
-          <p class="font-ibm">
+          <p class="font-ibm" style="max-width: 500px; margin: auto">
             КАЙДЗЕН - это методика маленьких шагов к большим целям с набором
             эффективных инструментов и наилучших мировых практик, которые
             позволяют решить многие проблемы в бизнесе.
@@ -185,34 +193,34 @@
         </div>
       </div>
 
-      <div class="row gy-4 gx-5">
-        <div class="col-md-4">
-          <i class="bi bi-box fs-3"></i>
+      <div class="row mt-5">
+        <div class="col-md-4 section-box">
+          <i class="bi bi-box fs-2"></i>
           <h3 class="font-bona h5 mt-3">
             Хаос в административной и управленческой деятельности
           </h3>
-          <p class="lead font-ibm">
+          <p class="lead font-ibm" style="font-size: 1rem">
             Кайдзен предлагает эффективные инструменты для диагностики и
             устранения возникающих проблем.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 section-box">
           <i class="bi bi-box fs-2"></i>
           <h3 class="font-bona h5 mt-3">
-            Снижение конкурентоспособности и из-за низкой продуктивности
+            Снижение конкурентоспособности из-за низкой продуктивности
           </h3>
-          <p class="lead font-ibm">
+          <p class="lead font-ibm" style="font-size: 1rem">
             Кайдзен помогает выявить узкие места и источники потерь, как в
             сотрудниках, так и в процессах: оптимизации и обучения с
             использованием данной методики.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 section-box">
           <i class="bi bi-box fs-2"></i>
           <h3 class="font-bona h5 mt-3">
             Низкая скорость из-за отсутствия порядка в процессах
           </h3>
-          <p class="lead font-ibm">
+          <p class="lead font-ibm" style="font-size: 1rem">
             Принципы Кайдзен улучшают работу и мотивацию сотрудников, что
             поможет лучше организовать процессы и сделать работу быстрее.
           </p>
@@ -232,9 +240,9 @@
     </div>
 
     <!-- section 3 - Почему кайдзен? -->
-    <div class="container-fluid container-grey text-center p-5">
-      <div class="row">
-        <div class="col-sm text-black">
+    <div id="whyKaizen" class="container-fluid container-grey text-center p-5">
+      <div class="row" style="margin-top: 50px">
+        <div class="col-sm text-black mb-4">
           <h2 class="fw-semibold font-bona mb-3">Почему методика Кайдзен?</h2>
           <p class="font-ibm">
             Потому что она популярна в мировом бизнес-сообществе и работает на
@@ -251,12 +259,13 @@
             <div class="accordion-item">
               <h2 class="accordion-header m-0">
                 <button
-                  class="accordion-button collapsed font-bona fs-5"
+                  class="accordion-button collapsed font-bona"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
                   aria-expanded="false"
                   aria-controls="collapseOne"
+                  style="font-size: 1.1rem"
                 >
                   Постоянное улучшение
                 </button>
@@ -267,7 +276,7 @@
                 data-bs-parent="#accordion"
                 style="text-align: left"
               >
-                <div class="accordion-body font-ibm">
+                <div class="accordion-body font-ibm fs-6">
                   Вместо резких изменений методика предполагает небольшие, но
                   регулярные улучшения, что снижает стресс и сопротивление
                   сотрудников.
@@ -277,12 +286,13 @@
             <div class="accordion-item">
               <h2 class="accordion-header m-0">
                 <button
-                  class="accordion-button collapsed font-bona fs-5"
+                  class="accordion-button collapsed font-bona"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
                   aria-expanded="false"
                   aria-controls="collapseTwo"
+                  style="font-size: 1.1rem"
                 >
                   Вовлечение всех сотрудников
                 </button>
@@ -303,12 +313,13 @@
             <div class="accordion-item">
               <h2 class="accordion-header m-0">
                 <button
-                  class="accordion-button collapsed font-bona fs-5"
+                  class="accordion-button collapsed font-bona"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseThree"
                   aria-expanded="false"
                   aria-controls="collapseThree"
+                  style="font-size: 1.1rem"
                 >
                   Оптимизация процессов и снижение затрат
                 </button>
@@ -329,12 +340,13 @@
             <div class="accordion-item">
               <h2 class="accordion-header m-0">
                 <button
-                  class="accordion-button collapsed font-bona fs-5"
+                  class="accordion-button collapsed font-bona"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseFour"
                   aria-expanded="false"
                   aria-controls="collapseFour"
+                  style="font-size: 1.1rem"
                 >
                   Гибкость и адаптивность
                 </button>
@@ -357,8 +369,11 @@
     </div>
 
     <!-- section 4 - Обучение руководителей и сотрудников -->
-    <div class="container-grey container-fluid p-5">
-      <h2 class="text-dark fw-semibold font-bona mb-3 text-center">
+    <div id="training" class="container-grey container-fluid p-5">
+      <h2
+        class="text-dark fw-semibold font-bona mb-4 text-center"
+        style="margin-top: 50px"
+      >
         Почему обучение является важным первым шагом
       </h2>
       <div class="card-group">
@@ -422,8 +437,8 @@
     </div>
 
     <!-- section 5 - Кайдзен тренер -->
-    <div class="container-blue container-fluid p-5">
-      <div class="row">
+    <div id="kaizenCoach" class="container-blue container-fluid p-5">
+      <div class="row" style="margin-top: 50px">
         <div class="col-sm-6 text-white">
           <h2 class="fw-semibold font-bona mb-3">
             Сымбат Кадыр — <br />Кайдзен-тренер
@@ -460,20 +475,29 @@
               </ul>
             </div>
           </div>
+          <p class="text-center pt-3">
+            <a
+              href="#"
+              class="btn border-light font-ibm text-white"
+              role="button"
+              >Образование ></a
+            >
+          </p>
         </div>
         <div class="col-sm-6 p-2">
           <img
             src="./images/kaizenCoach.jpg"
-            class="img-fluid rounded-4"
+            class="img-fluid rounded-2"
             alt="Kaizen coach photo"
+            style=""
           />
         </div>
       </div>
     </div>
 
     <!-- section 6 - Алгоритм -->
-    <div class="container-fluid container-grey text-dark p-5">
-      <div class="col">
+    <div id="algorythm" class="container-fluid container-grey text-dark p-5">
+      <div class="col" style="margin-top: 50px">
         <div class="col mb-4">
           <h2 class="fw-semibold font-bona mb-3">
             Алгоритм внедрения методики Кайдзен
@@ -541,7 +565,7 @@
       </div>
     </div>
 
-    <div class="container-blue container-fluid p-5">
+    <div class="container-grey container-fluid p-5">
       <figure class="text-center border border-2 p-3 bg-light">
         <blockquote class="font-ibm text-dark">
           <p>
@@ -557,8 +581,8 @@
       </figure>
     </div>
 
-    <div class="container-fluid container-grey text-left p-5">
-      <div class="row">
+    <div id="benefits" class="container-fluid container-grey text-left p-5">
+      <div class="row" style="margin-top: 50px">
         <div class="col-sm text-black">
           <h2 class="fw-semibold font-bona mb-3">
             Можно ли найти ифнормацию и самостоятельно обучиться и внедрить
@@ -625,8 +649,8 @@
       </div>
     </div>
 
-    <div class="container-fluid container-blue text-left p-5">
-      <div class="row align-items-center">
+    <div id="cases" class="container-fluid container-blue text-left p-5">
+      <div class="row align-items-center" style="margin-top: 50px">
         <!-- LEFT SIDE: Title -->
         <div class="col-md-6 text-white">
           <h2 class="fw-semibold font-bona mb-3 p-4">
@@ -803,7 +827,10 @@
       </div>
     </div>
 
-    <div class="container-fluid p-5 text-left consultation-section text-white">
+    <div
+      id="consultation"
+      class="container-fluid p-5 text-left consultation-section text-white"
+    >
       <div class="row">
         <div class="col-md-12 font-ibm">
           <h2 class="mb-4">Запишитесь на консультацию сегодня</h2>
@@ -827,8 +854,8 @@
       </div>
     </div>
 
-    <footer class="contact-section bg-light py-5">
-      <div class="container text-center">
+    <footer class="container-fluid container-grey p-5">
+      <div class="text-center">
         <div class="mb-4">
           <div
             class="fst-italic fw-semibold pb-4"
@@ -842,16 +869,28 @@
         </div>
 
         <div class="d-flex justify-content-center gap-4 mb-4">
-          <a href="#" class="text-dark fs-4" aria-label="Instagram">
+          <a
+            href="https://www.instagram.com/kaizenbureau/"
+            class="text-dark fs-4"
+            aria-label="Instagram"
+          >
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="#" class="text-dark fs-4" aria-label="WhatsApp">
+          <a
+            href="https://wa.me/77017311068"
+            class="text-dark fs-4"
+            aria-label="WhatsApp"
+          >
             <i class="bi bi-whatsapp"></i>
           </a>
-          <a href="#" class="text-dark fs-4" aria-label="Email">
+          <a
+            href="mailto:skadyr23@gmail.com"
+            class="text-dark fs-4"
+            aria-label="Email"
+          >
             <i class="bi bi-envelope-fill"></i>
           </a>
-          <a href="#" class="text-dark fs-4" aria-label="Phone">
+          <a href="tel:+77017311068" class="text-dark fs-4" aria-label="Phone">
             <i class="bi bi-telephone-fill"></i>
           </a>
         </div>
@@ -861,10 +900,9 @@
     </footer>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
       crossorigin="anonymous"
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     ></script>
     <script src="script.js"></script>
   </body>

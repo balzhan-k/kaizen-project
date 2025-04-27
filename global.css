@@ -3,10 +3,17 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*navbar*/
 .background-container {
   background: url(./images/hero.jpg) no-repeat center;
   background-size: cover;
+  min-height: 40vh;
+  padding: 80px 20px;
 }
 
 /*section 2 - О Кайдзен*/
@@ -24,12 +31,10 @@
   font-optical-sizing: auto;
 }
 
-/*section 3 - Почему методика Кайдзен*/
 .container-grey {
   background-color: #f0f0f0;
 }
 
-/* section 5 - Алгоритм */
 .step-box {
   position: relative;
   padding-left: 2rem;
@@ -65,10 +70,8 @@
 }
 
 .consultation-section {
-  background: url('./images/bw.jpg') no-repeat center center;
+  background: url("./images/bw.jpg") no-repeat center center;
   background-size: cover;
   min-height: 50vh;
   padding: 80px 20px;
 }
-
-
