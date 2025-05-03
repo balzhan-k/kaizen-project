@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Navbar background change on scroll
   const navbar = document.getElementById("navbar");
 
   window.addEventListener("scroll", function () {
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Offcanvas close behavior
   const offcanvasElement = document.getElementById("navbarOffcanvasLg");
   const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
 
@@ -26,66 +28,83 @@ document.addEventListener("DOMContentLoaded", function () {
   offcanvasHeaderLink.addEventListener("click", function () {
     offcanvas.hide();
   });
-});
 
-let currentIndex = 0;
-const slider = document.getElementById("caseSlider");
-const caseItems = document.querySelectorAll(".case-item");
-const dots = document.querySelectorAll(".dot");
-const totalCases = caseItems.length;
-let isManualScroll = false;
+  // Case slider logic
+  const slider = document.getElementById("caseSlider");
+  const caseItems = document.querySelectorAll(".case-item");
+  const dots = document.querySelectorAll(".dot");
+  const totalCases = caseItems.length;
 
-// Update slider position
-function updateSlider() {
-  isManualScroll = true;
-  const itemWidth = slider.offsetWidth;
-  slider.scrollTo({
-    left: currentIndex * itemWidth,
-    behavior: "smooth",
-  });
-  updateDots();
-  setTimeout(() => (isManualScroll = false), 500);
-}
+  let currentIndex = 0;
+  let isManualScroll = false;
 
-// Update active dot
-function updateDots() {
-  dots.forEach((dot, idx) => {
-    dot.classList.toggle("active", idx === currentIndex);
-  });
-}
-
-// Scroll right
-function scrollToRight() {
-  currentIndex = (currentIndex + 1) % totalCases;
-  updateSlider();
-}
-
-// Scroll left
-function scrollToLeft() {
-  currentIndex = (currentIndex - 1 + totalCases) % totalCases;
-  updateSlider();
-}
-
-// Go to a specific slide (dot click)
-function goToSlide(index) {
-  currentIndex = index;
-  updateSlider();
-}
-
-// Handle finger swipe scroll
-slider.addEventListener("scroll", () => {
-  if (isManualScroll) return;
-  const itemWidth = slider.offsetWidth;
-  const newIndex = Math.round(slider.scrollLeft / itemWidth);
-  if (newIndex !== currentIndex) {
-    currentIndex = newIndex % totalCases;
+  function updateSlider() {
+    isManualScroll = true;
+    const itemWidth = slider.offsetWidth;
+    slider.scrollTo({
+      left: currentIndex * itemWidth,
+      behavior: "smooth",
+    });
     updateDots();
+    setTimeout(() => (isManualScroll = false), 500);
   }
-});
 
-// Initialize dots
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    goToSlide(index);
+  function updateDots() {
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle("active", idx === currentIndex);
+    });
+  }
+
+  function scrollToRight() {
+    currentIndex = (currentIndex + 1) % totalCases;
+    updateSlider();
+  }
+
+  function scrollToLeft() {
+    currentIndex = (currentIndex - 1 + totalCases) % totalCases;
+    updateSlider();
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateSlider();
+  }
+
+  // Handle scroll (for swipe)
+  slider.addEventListener("scroll", () => {
+    if (isManualScroll) return;
+    const itemWidth = slider.offsetWidth;
+    const newIndex = Math.round(slider.scrollLeft / itemWidth);
+    if (newIndex !== currentIndex) {
+      currentIndex = newIndex % totalCases;
+      updateDots();
+    }
   });
+
+  // Dot click listeners
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      goToSlide(index);
+    });
+  });
+
+  // Touch support
+  let startX = 0;
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) {
+      scrollToRight();
+    } else if (endX - startX > 50) {
+      scrollToLeft();
+    }
+  });
+
+  // Attach buttons (optional, if not in HTML already)
+  window.scrollToRight = scrollToRight;
+  window.scrollToLeft = scrollToLeft;
+  window.goToSlide = goToSlide;
 });

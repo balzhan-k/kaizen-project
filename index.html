@@ -40,24 +40,40 @@
         class="navbar navbar-nav-scroll navbar-expand-lg navbar-light bg-transparent fixed-top p-0"
       >
         <div class="container-fluid navbar-container">
-          <a class="navbar-brand p-2 m-0" href="#home">
-            <img
-              src="./logo/KaizenLogo.png"
-              alt="Logo"
-              width="50"
-              height="50"
-              class="rounded"
-            />
-          </a>
+          <div class="d-flex justify-content-start">
+            <a class="navbar-brand p-2 m-0" href="#home">
+              <img
+                src="./logo/KaizenLogo.png"
+                alt="Logo"
+                width="50"
+                height="50"
+                class="rounded"
+              />
+            </a>
+            <p class="text-left py-2 m-0 font-bona fs-6">
+              Kaizen Bureau. <br />
+              Обучение и консалтинг.
+            </p>
+          </div>
           <button
-            class="navbar-toggler border-0"
+            class="navbar-toggler d-lg-none border-0"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#navbarOffcanvasLg"
             aria-controls="navbarOffcanvasLg"
             aria-label="Toggle navigation"
+            style="
+              width: 50px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
           >
-            <span class="navbar-toggler-icon"></span>
+            <span
+              class="navbar-toggler-icon"
+              style="width: 30px; height: 30px"
+            ></span>
           </button>
 
           <div
@@ -87,7 +103,7 @@
               <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
                   <a
-                    class="nav-link mx-lg-2 text-primary-emphasis px-0"
+                    class="nav-link text-primary-emphasis px-0 m-0"
                     style="font-family: 'Bona Nova', serif"
                     aria-current="page"
                     href="#about"
@@ -96,7 +112,7 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    class="nav-link text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
                     href="#whyKaizen"
                     >Почему Кайдзен</a
@@ -104,15 +120,7 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
-                    style="font-family: 'Bona Nova', serif"
-                    href="#training"
-                    >Обучение</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    class="nav-link text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
                     href="#kaizenCoach"
                     >Кайдзен тренер</a
@@ -120,23 +128,16 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    class="nav-link text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
-                    href="#algorythm"
-                    >Алгоритм</a
+                    href="#training"
+                    >Обучение</a
                   >
                 </li>
+
                 <li class="nav-item">
                   <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
-                    style="font-family: 'Bona Nova', serif"
-                    href="#benefits"
-                    >Преимущества</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    class="nav-link text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
                     href="#cases"
                     >Кейсы</a
@@ -144,7 +145,7 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link mx-lg-2 text-primary-emphasis fs-6"
+                    class="nav-link text-primary-emphasis fs-6"
                     style="font-family: 'Bona Nova', serif"
                     href="#consultation"
                     >Контакты</a
@@ -163,19 +164,24 @@
             class="blockquote position-relative z-1 ps-0 p-3 text-start fw-semibold text-primary-emphasis"
             style="font-family: 'Bona Nova', serif"
           >
-            <p class="fs-2">"Всякое знание начинается с обучения."</p>
+            <hr class="my-5" />
+            <p class="fs-2">
+              "Главная из проблем компании - не человеческий фактор, а
+              несовершенство системы"
+            </p>
           </blockquote>
           <figcaption
             class="blockquote-footer text-primary-emphasis m-0"
             style="font-family: 'Bona Nova', serif"
           >
-            Аристотель
+            <strong>Тайити Оно</strong> - основатель Toyota Production System
           </figcaption>
+          <hr class="my-5" />
         </figure>
       </section>
     </header>
 
-    <!-- О Кайдзен -->
+    <!--section 1 - О Кайдзен -->
     <div
       id="about"
       class="container-fluid container-blue text-white text-center p-5"
@@ -193,36 +199,36 @@
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-md-4 section-box">
+      <div class="row mt-5 m-0 d-flex justify-content-center">
+        <div class="col-md-4 section-box m-0">
           <i class="bi bi-box fs-2"></i>
           <h3 class="font-bona h5 mt-3">
             Хаос в административной и управленческой деятельности
           </h3>
           <p class="lead font-ibm" style="font-size: 1rem">
             Кайдзен предлагает эффективные инструменты для диагностики и
-            устранения возникающих проблем.
+            устранения возникающих проблем
           </p>
         </div>
-        <div class="col-md-4 section-box">
+        <div class="col-md-4 section-box m-0">
           <i class="bi bi-box fs-2"></i>
           <h3 class="font-bona h5 mt-3">
-            Снижение конкурентоспособности из-за низкой продуктивности
+            Снижение конкурентоспособности из-за недовольства клиентов
           </h3>
           <p class="lead font-ibm" style="font-size: 1rem">
-            Кайдзен помогает выявить узкие места и источники потерь, как в
-            сотрудниках, так и в процессах: оптимизации и обучения с
-            использованием данной методики.
+            Кайдзен помогает выявить узкие места и источники потерь, которые
+            влияют на качество и сроки исполнения заказов
           </p>
         </div>
-        <div class="col-md-4 section-box">
+        <div class="col-md-4 section-box m-0">
           <i class="bi bi-box fs-2"></i>
           <h3 class="font-bona h5 mt-3">
-            Низкая скорость из-за отсутствия порядка в процессах
+            Низкая продуктивность из-за отсутствия порядка в процессах
           </h3>
           <p class="lead font-ibm" style="font-size: 1rem">
-            Принципы Кайдзен улучшают работу и мотивацию сотрудников, что
-            поможет лучше организовать процессы и сделать работу быстрее.
+            Принципы Кайдзен облегчают работу и поднимают мотивацию сотрудников,
+            что в целом благоприятно влияет на климат в коллективе и
+            эффективность работы
           </p>
         </div>
       </div>
@@ -232,30 +238,36 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <p class="font-ibm">
-            Каждая проблема является следствием на отработанных внутренних
-            коммуникаций в управлении и в рабочих процессах команды.
+            КАЖДАЯ ПРОБЛЕМА ЯВЛЯЕТСЯ СЛЕДСТВИЕМ НЕ ОТРАБОТАННЫХ ВНУТРЕНННИХ
+            КОММУНИКАЦИЙ <br />
+            В УПРАВЛЕНИИ И В РАБОЧИХ ПРОЦЕССАХ КОМАНДЫ
           </p>
         </div>
       </div>
     </div>
 
-    <!-- section 3 - Почему кайдзен? -->
+    <!-- section 2 - Почему кайдзен? -->
     <div id="whyKaizen" class="container-fluid container-grey text-center p-5">
-      <div class="row" style="margin-top: 50px">
-        <div class="col-sm text-black mb-4">
-          <h2 class="fw-semibold font-bona mb-3">Почему методика Кайдзен?</h2>
-          <p class="font-ibm">
-            Потому что она популярна в мировом бизнес-сообществе и работает на
-            100%.
+      <div class="row" style="margin-top: 50px; margin-bottom: 50px">
+        <div class="col-sm mb-4">
+          <h2 class="fw-semibold font-bona mb-3 text-black">
+            Почему именно методика Кайдзен?
+          </h2>
+          <p class="section3-p font-ibm text-black">
+            Потому что она популярна в мировом <br />
+            бизнес-сообществе и работает на 100%.
           </p>
           <p class="text-center pt-3">
-            <a href="#" class="btn btn-outline-dark font-ibm" role="button"
-              >Узнать ></a
+            <a
+              href="./contact.html"
+              class="btn custom-btn font-ibm"
+              role="button"
+              >Узнать подробнее ></a
             >
           </p>
         </div>
         <div class="col-sm">
-          <div class="accordion" id="accordion">
+          <div class="accordion border-blue" id="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header m-0">
                 <button
@@ -368,77 +380,9 @@
       </div>
     </div>
 
-    <!-- section 4 - Обучение руководителей и сотрудников -->
-    <div id="training" class="container-grey container-fluid p-5">
-      <h2
-        class="text-dark fw-semibold font-bona mb-4 text-center"
-        style="margin-top: 50px"
-      >
-        Почему обучение является важным первым шагом
-      </h2>
-      <div class="card-group">
-        <div class="card p-2">
-          <img
-            src="./images/manager.jpg"
-            alt="Business woman leading meeting"
-          />
-          <div class="card-body">
-            <h5 class="card-title font-bona fw-semibold">Для руководителя</h5>
-            <ul class="font-ibm">
-              <li>
-                Личный пример – сотрудники охотнее поддерживают изменения, если
-                видят, что руководитель сам применяет метод.
-              </li>
-              <li>
-                Правильное управление процессом – без знаний лидер может
-                саботировать Кайдзен, даже не осознавая этого.
-              </li>
-              <li>
-                Формирование культуры улучшений – если руководитель поддерживает
-                инициативы, команда активно вовлекается.
-              </li>
-              <li>
-                Эффективное принятие решений – понимание принципов помогает
-                быстрее находить и устранять слабые места в бизнесе.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card p-2">
-          <img src="./images/employees.jpg" alt="Employees in a meeting" />
-          <div class="card-body">
-            <h5 class="card-title font-bona fw-semibold">Для сотрудников</h5>
-            <ul class="font-ibm">
-              <li>
-                Понимание принципов – без знаний сотрудники могут неправильно
-                применять Кайдзен, что снизит его эффективность.
-              </li>
-              <li>
-                Снижение сопротивления – обучение помогает людям осознать пользу
-                метода и охотнее принимать изменения.
-              </li>
-              <li>
-                Формирование единой культуры – когда вся команда говорит на
-                одном языке улучшений, процесс внедрения идет быстрее и легче.
-              </li>
-              <li>
-                Рост компетенций – обученные сотрудники способны самостоятельно
-                находить и устранять проблемы, повышая эффективность бизнеса.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <p class="text-center pt-3">
-        <a href="#" class="btn btn-outline-dark font-ibm" role="button"
-          >Список тренингов ></a
-        >
-      </p>
-    </div>
-
-    <!-- section 5 - Кайдзен тренер -->
+    <!-- section 3 - Кайдзен тренер -->
     <div id="kaizenCoach" class="container-blue container-fluid p-5">
-      <div class="row" style="margin-top: 50px">
+      <div class="row" style="margin-top: 50px; margin-bottom: 50px">
         <div class="col-sm-6 text-white">
           <h2 class="fw-semibold font-bona mb-3">
             Сымбат Кадыр — <br />Кайдзен-тренер
@@ -475,89 +419,129 @@
               </ul>
             </div>
           </div>
-          <p class="text-center pt-3">
-            <a
-              href="#"
-              class="btn border-light font-ibm text-white"
-              role="button"
-              >Образование ></a
-            >
-          </p>
         </div>
         <div class="col-sm-6 p-2">
           <img
             src="./images/kaizenCoach.jpg"
             class="img-fluid rounded-2"
             alt="Kaizen coach photo"
-            style=""
           />
         </div>
       </div>
     </div>
 
-    <!-- section 6 - Алгоритм -->
-    <div id="algorythm" class="container-fluid container-grey text-dark p-5">
+    <!-- section 4 - Обучение -->
+    <div id="training" class="container-fluid container-grey text-dark p-5">
       <div class="col" style="margin-top: 50px">
         <div class="col mb-4">
-          <h2 class="fw-semibold font-bona mb-3">
-            Алгоритм внедрения методики Кайдзен
-          </h2>
+          <h2 class="fw-semibold font-bona mb-3">Обучение Кайдзен</h2>
           <p class="font-ibm">
             Любому руководителю или собственнику сложно решиться на изменения в
             компании. Важно правильно оценить ресурсы и понять готовность
-            навести порядок. Поэтому я приглашаю вас на консультацию
+            навести порядок.
           </p>
           <p class="text-left pt-3">
-            <a href="#" class="btn btn-outline-dark font-ibm" role="button"
+            <a
+              href="./contact.html"
+              class="btn custom-btn font-ibm"
+              role="button"
               >Записаться на консультацию ></a
             >
           </p>
         </div>
-
-        <!-- Bootstrap 5 grid -->
-        <div class="container-fluid">
-          <div class="row text-left g-4">
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="step-box">
-                <p class="step-number fw-bold font-ibm">1</p>
-                <p class="font-bona fs-5">
-                  Первичная КОНСУЛЬТАЦИЯ - анализ и рекомендации
-                </p>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-blue">
+              <div class="card-body">
+                <h5 class="card-title font-bona fw-semibold">
+                  Интерактивный онлайн-тренинг
+                </h5>
+                <ul class="font-ibm">
+                  <li>1 день (4-8 часов)</li>
+                  <li>10 инструментов</li>
+                  <li>Командные игры</li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="step-box">
-                <p class="step-number fw-bold font-ibm">2</p>
-                <p class="font-bona fs-5">ДИАГНОСТИКА предприятия на месте</p>
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-blue">
+              <div class="card-body">
+                <h5 class="card-title font-bona fw-semibold">
+                  Практический онлайн курс
+                </h5>
+
+                <ul class="font-ibm">
+                  <li>3 месяца</li>
+                  <li>10 модулей</li>
+                  <li>Консультации эксперта</li>
+                </ul>
               </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="step-box">
-                <p class="step-number fw-bold font-ibm">3</p>
-                <p class="font-bona fs-5">Составление ПЛАНА ДЕЙСТВИЙ</p>
+          </div>
+        </div>
+        <hr class="my-5" />
+        <div class="container-grey container-fluid">
+          <h4 class="text-dark fw-semibold font-bona mb-4 text-center">
+            Почему обучение является важным первым шагом
+          </h4>
+          <div class="card-group">
+            <div class="card p-2">
+              <img
+                src="./images/manager.jpg"
+                alt="Business woman leading meeting"
+              />
+              <div class="card-body">
+                <h5 class="card-title font-bona fw-semibold">
+                  Для руководителя
+                </h5>
+                <ul class="font-ibm">
+                  <li>
+                    Личный пример – сотрудники охотнее поддерживают изменения,
+                    если видят, что руководитель сам применяет метод.
+                  </li>
+                  <li>
+                    Правильное управление процессом – без знаний лидер может
+                    саботировать Кайдзен, даже не осознавая этого.
+                  </li>
+                  <li>
+                    Формирование культуры улучшений – если руководитель
+                    поддерживает инициативы, команда активно вовлекается.
+                  </li>
+                  <li>
+                    Эффективное принятие решений – понимание принципов помогает
+                    быстрее находить и устранять слабые места в бизнесе.
+                  </li>
+                </ul>
               </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="step-box">
-                <p class="step-number fw-bold font-ibm">4</p>
-                <p class="font-bona fs-5">РЕАЛИЗАЦИЯ решений</p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="step-box">
-                <p class="step-number fw-bold font-ibm">5</p>
-                <p class="font-bona fs-5">МОНИТОРИНГ плана</p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="step-box">
-                <p class="step-number fw-bold font-ibm">6</p>
-                <p class="font-bona fs-5">Дальнейшее СОВЕРШЕНСТВОВАНИЕ</p>
+            <div class="card p-2">
+              <img src="./images/employees.jpg" alt="Employees in a meeting" />
+              <div class="card-body">
+                <h5 class="card-title font-bona fw-semibold">
+                  Для сотрудников
+                </h5>
+                <ul class="font-ibm">
+                  <li>
+                    Понимание принципов – без знаний сотрудники могут
+                    неправильно применять Кайдзен, что снизит его эффективность.
+                  </li>
+                  <li>
+                    Снижение сопротивления – обучение помогает людям осознать
+                    пользу метода и охотнее принимать изменения.
+                  </li>
+                  <li>
+                    Формирование единой культуры – когда вся команда говорит на
+                    одном языке улучшений, процесс внедрения идет быстрее и
+                    легче.
+                  </li>
+                  <li>
+                    Рост компетенций – обученные сотрудники способны
+                    самостоятельно находить и устранять проблемы, повышая
+                    эффективность бизнеса.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -565,90 +549,7 @@
       </div>
     </div>
 
-    <div class="container-grey container-fluid p-5">
-      <figure class="text-center border border-2 p-3 bg-light">
-        <blockquote class="font-ibm text-dark">
-          <p>
-            "Наше сотрудничество построено на принципе гибкости. Вы всегда
-            можете остановиться на любом этапе, когда сочтете нужным работать
-            самостоятельно. Либо пропустить этап, если он вам не требуется, и
-            сразу перейти к следующему."
-          </p>
-        </blockquote>
-        <figcaption class="blockquote-footer text-dark pt-3 font-ibm">
-          Сымбат Кадыр
-        </figcaption>
-      </figure>
-    </div>
-
-    <div id="benefits" class="container-fluid container-grey text-left p-5">
-      <div class="row" style="margin-top: 50px">
-        <div class="col-sm text-black">
-          <h2 class="fw-semibold font-bona mb-3">
-            Можно ли найти ифнормацию и самостоятельно обучиться и внедрить
-            методику?
-          </h2>
-        </div>
-
-        <div class="col-sm">
-          <p class="font-ibm mb-2">Да, возможно.</p>
-          <p class="font-ibm">В чем же преимущества помощи тренера?</p>
-
-          <div class="row mb-2">
-            <div class="col-auto">
-              <i class="bi bi-box fs-3"></i>
-            </div>
-            <div class="col">
-              <p class="font-ibm mb-0">
-                Экспертный взгляд со стороны – <br />
-                помогает выявить слабые места и зоны роста, которые не всегда
-                заметны внутри компании.
-              </p>
-            </div>
-          </div>
-
-          <div class="row mb-2">
-            <div class="col-auto">
-              <i class="bi bi-box fs-3"></i>
-            </div>
-            <div class="col">
-              <p class="font-ibm mb-0">
-                Правильное внедрение – <br />
-                консультант обучает сотрудников, устраняет ошибки и адаптирует
-                методику под ваш бизнес.
-              </p>
-            </div>
-          </div>
-
-          <div class="row mb-2">
-            <div class="col-auto">
-              <i class="bi bi-box fs-3"></i>
-            </div>
-            <div class="col">
-              <p class="font-ibm mb-0">
-                Экономия времени и ресурсов – <br />
-                вместо проб и ошибок вы сразу получаете эффективные и
-                проверенные решения.
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-auto">
-              <i class="bi bi-box fs-3"></i>
-            </div>
-            <div class="col">
-              <p class="font-ibm mb-0">
-                Поддержка и мотивация – <br />
-                консультант помогает преодолеть сопротивление изменениям и
-                вдохновляет команду.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- sect - Кейсы-->
     <div id="cases" class="container-fluid container-blue text-left p-5">
       <div class="row align-items-center" style="margin-top: 50px">
         <!-- LEFT SIDE: Title -->
@@ -662,7 +563,7 @@
         <div class="col-md-6 position-relative">
           <div
             id="caseSlider"
-            class="d-flex overflow-hidden text-white border border-light"
+            class="d-flex overflow-hidden text-white border rounded-2 border-light"
             style="scroll-snap-type: x mandatory"
           >
             <!-- CASES -->
@@ -827,12 +728,29 @@
       </div>
     </div>
 
+    <!-- Цитата Сымбат-->
+    <div class="container-grey container-fluid p-5">
+      <figure class="text-center p-3">
+        <blockquote class="font-ibm text-dark">
+          <p>
+            "Наше сотрудничество построено на принципе гибкости. Вы всегда
+            можете остановиться на любом этапе, когда сочтете нужным работать
+            самостоятельно. Либо пропустить этап, если он вам не требуется, и
+            сразу перейти к следующему."
+          </p>
+        </blockquote>
+        <figcaption class="blockquote-footer text-dark pt-3 font-ibm">
+          Сымбат Кадыр
+        </figcaption>
+      </figure>
+    </div>
+
     <div
       id="consultation"
       class="container-fluid p-5 text-left consultation-section text-white"
     >
       <div class="row">
-        <div class="col-md-12 font-ibm">
+        <div class="col-md-12 font-ibm" style="margin-top: 50px">
           <h2 class="mb-4">Запишитесь на консультацию сегодня</h2>
           <p>
             <strong>Формат консультации:</strong> Онлайн (Zoom, Google Meet) или
@@ -847,9 +765,14 @@
             <strong>Результат:</strong> Краткий отчёт с выявленными проблемами и
             рекомендациями.
           </p>
-          <button class="btn btn-outline-light consultation-button mt-3">
-            Записаться
-          </button>
+          <p class="text-left pt-3">
+            <a
+              href="./contact.html"
+              class="btn btn-outline-light consultation-button mt-3"
+              role="button"
+              >Записаться на консультацию ></a
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -857,11 +780,8 @@
     <footer class="container-fluid container-grey p-5">
       <div class="text-center">
         <div class="mb-4">
-          <div
-            class="fst-italic fw-semibold pb-4"
-            style="font-family: 'Bona Nova', serif"
-          >
-            <p class="m-0 p-0">
+          <div>
+            <p class="font-bona fs-5 pb-4 m-0 p-0 text-dark">
               Kaizen Bureau. <br />
               Обучение и консалтинг.
             </p>

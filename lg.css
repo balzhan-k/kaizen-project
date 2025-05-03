@@ -3,7 +3,11 @@
     max-width: 400px;
     margin: auto;
   }
+  .section3-3 {
+    font-size: 1.2rem;
+  }
 
+  
   /*FAQ section*/
   .sign-in-button {
     margin: 20px auto;

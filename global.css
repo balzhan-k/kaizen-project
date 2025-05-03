@@ -22,6 +22,11 @@ html {
   background-color: #010248;
 }
 
+.border-blue {
+  border: 1px solid #010248;
+  border-radius: 0.375rem;
+}
+
 .font-bona {
   font-family: "Bona Nova", serif;
 }
@@ -29,6 +34,18 @@ html {
 .font-ibm {
   font-family: "IBM Plex Sans", sans-serif;
   font-optical-sizing: auto;
+}
+
+.custom-btn {
+  background-color: #010248;
+  color: #ffffff;
+  border: 1px solid #010248;
+}
+
+.custom-btn:hover {
+  background-color: #ffffff;
+  color: #010248;
+  border: 1px solid #010248;
 }
 
 .container-grey {
@@ -41,9 +58,7 @@ html {
   border-left: 1px solid #000;
 }
 
-.step-number {
-  font-size: 4rem;
-}
+
 
 #caseSlider {
   scroll-snap-type: x mandatory;
