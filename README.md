@@ -28,6 +28,7 @@ The site acts as a digital touchpoint for potential clients seeking personal or 
   Easy-to-use form on `contact.html`, directing to a `success.html` page upon submission ✅ — helping clients connect directly.
 
 ## 🖼️ Project Overview
+
 ![DiliaProject](https://github.com/user-attachments/assets/9082890f-c10c-441d-9e9b-a6fe0a2e694b)
 
 ## 🚀 How to Run the Project
