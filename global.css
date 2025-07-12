@@ -8,15 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/*navbar*/
 .background-container {
   background: url(./images/hero.jpg) no-repeat center;
   background-size: cover;
   min-height: 40vh;
   padding: 80px 20px;
 }
-
-/*section 2 - О Кайдзен*/
 
 .container-blue {
   background-color: #010248;
@@ -58,8 +55,6 @@ html {
   border-left: 1px solid #000;
 }
 
-
-
 #caseSlider {
   scroll-snap-type: x mandatory;
 }
@@ -89,4 +84,60 @@ html {
   background-size: cover;
   min-height: 50vh;
   padding: 80px 20px;
+}
+
+.w-30px {
+  width: 30px;
+}
+
+.h-30px {
+  height: 30px;
+}
+
+.max-w-600px {
+  max-width: 600px;
+}
+
+.bg-white-95-opacity {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-toggler-custom {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.mb-50px {
+  margin-bottom: 50px;
+}
+
+.max-w-500px {
+  max-width: 500px;
+}
+
+.fs-1-1rem {
+  font-size: 1.1rem;
+}
+
+.w-40px {
+  width: 40px;
+}
+
+.h-40px {
+  height: 40px;
+}
+
+.scroll-snap-x-mandatory {
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-snap-align-start {
+  scroll-snap-align: start;
 }
