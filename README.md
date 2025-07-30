@@ -27,7 +27,7 @@ The site acts as a digital touchpoint for potential clients seeking personal or 
 - **📬 Contact Form**:  
   Easy-to-use form on `contact.html`, directing to a `success.html` page upon submission ✅ — helping clients connect directly.
 
-## ��️ Project Overview
+## 📊 Project Overview
 
 ![KaizenProject](https://github.com/user-attachments/assets/46ef5b56-7b04-4da0-8afa-6eec60ebdeed)
 
